@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#left{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+#right{
+    width: 70%;
+    height: 100%;
+    background-color: bisque;
+}
+#rtop{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: rgb(219, 196, 255)
+}
+#rbottom{
+    width: 100%;
+    height:50%;
+    background-image: url(img.png);
+    background-size: cover;
+    background-position: center;
+}
+#rtop-left{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://th.bing.com/th/id/OIG.Q1pZAtKalwGbXWokU9yb?pid=ImgGn);
+    background-size: cover;
+    background-position: center;
+}
+#rtop-right{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/premium-photo/water-splashing-fresh-sliced-oranges-orange-fruit-orange_33736-3141.jpg?w=900);
+    background-size: cover;
+}
+#lnavright{
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+}
+#lnav{
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+#lnavright a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.a1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.397);
+}
+i{
+    font-size: 25px;
+}
+#lnavright i{
+    color: royalblue;
+}
+#textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter h1{
+    font-size: 100px;
+    font-weight: 900;
+}
+#textcenter p{
+    margin: 30px 0px;
+    font-size: 18px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.699);
+    line-height: 25px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.836);
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.397);
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+@media (max-width:500px) {
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
